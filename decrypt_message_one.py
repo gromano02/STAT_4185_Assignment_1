@@ -41,3 +41,9 @@ encrypted_message = encrypted_file.readline()
 encrypted_file.close()
 
 # Write code below
+c = {v: k for k, v in cipher.items()}
+decrypted_message = ''
+for i in encrypted_message:
+    decrypted_message += c[i]
+
+print(decrypted_message)
